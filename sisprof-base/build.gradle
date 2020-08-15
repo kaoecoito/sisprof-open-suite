@@ -1,0 +1,18 @@
+apply plugin: "com.axelor.app-module"
+
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Sisprof Base"
+	description "Sisprof Base Module"
+}
+
+
+dependencies {
+	compile project(":modules:axelor-base")
+}
+

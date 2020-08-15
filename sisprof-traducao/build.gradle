@@ -1,0 +1,22 @@
+apply plugin: "com.axelor.app-module"
+
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Sisprof Tradução"
+	description "Sisprof Módulo de Traduções pt-br"
+}
+
+
+dependencies {
+	gradle.appModules.each { dir ->
+		if (dir.name.startsWith("axelor-")) {
+			compile project(":modules:$dir.name")
+		}
+	}
+}
+
