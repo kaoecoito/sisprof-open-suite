@@ -7,8 +7,8 @@ apply {
 }
 
 axelor {
-	title "Sisprof Tradução"
-	description "Sisprof Módulo de Traduções pt-br"
+	title "Sisprof Traducao"
+	description "Sisprof Modulo de Traducoes pt-br"
 }
 
 
